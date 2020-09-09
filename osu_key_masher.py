@@ -50,6 +50,7 @@ def parse_cfg():
 def on_press(key):
     pos = (0,0)
     global screen
+    # Checks if key is mapped
     if str(key) in keys:
         screen.fill(transparent)
         screen.blit(frames[keys[str(key)]], pos)
